@@ -1,0 +1,6 @@
+git_client_name: <YOUR_NAME>
+git_client_email: <YOUR_EMAIL>
+timezone: Europe/Berlin
+github_repos:
+  - repo: git@github.com:<YOUR_ORG>/<YOUR_REPO>.git
+    dir_name: <TARGET_DIR>

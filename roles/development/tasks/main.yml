@@ -1,0 +1,15 @@
+---
+- debug: var=hostvars['hostname']
+- debug: var=hostvars['fqdn']
+- debug: var=hostvars['ansible_local']
+- debug: var=hostvars['ansible_playbook_python']
+- debug: var=hostvars['inventory_hostname']
+- debug: var=hostvars['inventory_file']
+- debug: var=hostvars['groups']
+
+- name: Ping my hosts
+  ansible.builtin.ping:
+
+- name: Print message
+  ansible.builtin.debug:
+  msg: Hello world
