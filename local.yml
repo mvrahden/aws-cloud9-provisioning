@@ -8,4 +8,4 @@
    - development
    - yatesr.timezone
   vars_files:
-    - ~/.ansible_secrets.yml
+    - ~/environment/.secrets/.ansible_secrets.yml
