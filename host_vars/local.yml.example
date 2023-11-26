@@ -1,3 +1,6 @@
+# This file serves as an example.
+# Copy it as "local.yml" and adjust values according to your needs.
+
 git_client_name: <YOUR_NAME>
 git_client_email: <YOUR_EMAIL>
 timezone: Europe/Berlin

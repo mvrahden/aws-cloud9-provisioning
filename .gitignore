@@ -127,3 +127,6 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+host_vars/*.yml
+!host_vars/*.example
