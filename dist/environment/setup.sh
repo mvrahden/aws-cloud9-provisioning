@@ -14,7 +14,7 @@ mkdir -p "${CWD}/github/"
 git clone "https://github.com/mvrahden/aws-cloud9-provisioning.git" --branch "main" "${REPO_DIR}" \
    || bash -c "cd \"${REPO_DIR}/\" && git pull --ff-only"
 
-cp -n "${REPO_DIR}/ansible_secrets_example.yml" "${CWD}/.secrets/.ansible_secrets_example.yml"
+cp -n "${REPO_DIR}/dist/environment/.secrets/ansible_secrets_example.yml" "${CWD}/.secrets/.ansible_secrets_example.yml"
 
 SECRETS_FILE="${HOME}/environment/.secrets/.ansible_secrets.yml"
 { true > "${SECRETS_FILE}"; } &> /dev/null || (echo "")
