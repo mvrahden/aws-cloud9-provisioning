@@ -8,22 +8,13 @@ AMI.
 ## Setup
 
 ```bash
-# Clone repository
-mkdir -p ~/environment/github/
-cd ~/environment/github/
-git clone https://github.com/mvrahden/aws-cloud9-provisioning.git
-
-# Install Ansible
-cd ~/environment/github/aws-cloud9-provisioning
-/bin/bash ./setup.sh
-
-# Copy Ansible Secrets Template to ~/.ansible_secrets.yml
-# Configure with keys as needed
-cp -n ansible_secrets_example.yml ~/.ansible_secrets.yml
+# Copy the scripts (`dist/environment`) into your `~/environment` directory and execute them.
+cp -n dist/environment/resize.sh ~/environment/resize.sh
+cp -n dist/environment/setup.sh ~/environment/setup.sh
 
 # Install Ansible Galaxy dependencies
-ansible-galaxy install -r requirements.yml
+make init
 
 # Run Ansible playbook
-ansible-playbook local.yml
+make run
 ```
