@@ -1,3 +1,2 @@
 git_client_name: "{{ ansible_user_gecos }}"
 git_client_email: "{{ ansible_user_id }}@{{ ansible_fqdn }}"
-timezone: "{{ timezone }}"

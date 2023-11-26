@@ -3,9 +3,8 @@
 # This playbook deploys the entire setup to the Cloud9 development environment.
 - hosts: all
   vars:
-    ansible_python_interpreter: /usr/bin/python2.7
+    # ansible_python_interpreter: /usr/bin/python2.7
   roles:
    - development
-   - yatesr.timezone
   vars_files:
     - ~/environment/.secrets/.ansible_secrets.yml
